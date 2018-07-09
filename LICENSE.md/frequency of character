@@ -1,0 +1,26 @@
+
+#include<stdio.h>
+#include<string.h>
+
+int main()
+
+{
+    char a[70], b;
+
+     int i,c=0;
+
+    printf("enter the string");
+    gets(a);
+
+    printf("enter the character \n");
+    scanf("%c",&b);
+
+    for(i=0; a[i]!=0;i++)
+    {
+        if(b==a[i])
+            c++;
+    }
+    printf("frequency %d",c);
+
+    return 0;
+}
